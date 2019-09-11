@@ -22,7 +22,18 @@ int main() // this is a function in c++!
     double gpa = 3.5;
     bool isHere = true;
 
-    cout << phrase << endl;
+    phrase[11] = 'm';
+
+    // cout << phrase.length() << endl;
+    // cout << phrase.find("your", 0) << endl;
+
+    // cout << phrase.substr(11, 8) << endl;
+
+    string subphrase;
+
+    subphrase = phrase.substr(11, 8);
+
+    cout << subphrase << endl;
 
     return 0;
 }
@@ -32,3 +43,4 @@ int main() // this is a function in c++!
 // int -> integer -> whole number -> no decimals!
 // int characterAge;
 // characterAge = 50; is also valid syntax
+// substr -> returns part of a string -> 1st parameter is starting index position, 2nd is how many characters you want returned
